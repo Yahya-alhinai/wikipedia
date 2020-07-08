@@ -1,0 +1,158 @@
+body {
+    padding: 20px;
+    color: white;
+    font-family: Helvetica;
+}
+
+#search-form,
+.form-control {
+    margin-bottom: 20px;
+}
+
+.cover {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background-size: cover;
+}
+
+.cover:hover {
+    cursor: pointer;
+}
+
+.cover.playing {
+    border: 5px solid #e45343;
+}
+
+.input-container {
+    background-color: #0E0E0E;
+    width: 500px;
+    position: relative;
+    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: column-reverse;
+    flex-flow: column-reverse;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin: 50px auto;
+}
+
+.input-container input {
+    background-color: #0E0E0E;
+    color: #FFFFFF;
+    -webkit-box-ordinal-group: 11;
+    order: 10;
+    -ms-flex-order: 10;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    border-bottom: 1px solid #d5d5d5;
+    text-indent: 10px;
+}
+
+.input-container input::-moz-placeholder {
+    opacity: 0;
+}
+
+.input-container input::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.input-container input:-ms-input-placeholder {
+    opacity: 0;
+}
+
+.input-container input,
+.input-container label {
+    transition: all 0.3s;
+}
+
+.input-container label {
+    -webkit-box-ordinal-group: 101;
+    -ms-flex-order: 100;
+    order: 100;
+    color: #3f4f5b;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: translate(10px, 40px);
+    transform: translate(0px, 40px);
+}
+
+.input-container .bottom-line {
+    order: 2;
+    width: 0;
+    height: 2px;
+    background: #658db5;
+    transition: all 0.3s;
+}
+
+.input-container input:focus {
+    border-bottom-color: #fff;
+}
+
+.input-container input:focus~div,
+.input-container input:not(:placeholder-shown)~div {
+    width: 100%;
+}
+
+.input-container input:focus+label,
+.input-container input:not(:placeholder-shown)+label {
+    color: #52616c;
+    -webkit-transform: translate(10px) scale(0.9);
+    transform: translate(10px) scale(0.9);
+}
+
+.font {
+    color: #FFFFFF;
+    font-family: Helvetica;
+}
+
+#web_header {
+    font-size: 50px;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffffff;
+    background-color: #21AF42;
+    border: 2px solid $primary;
+    cursor: pointer;
+    width: max-content;
+    transition: 0.25s ease;
+}
+
+.btn:hover {
+    background: #7FFFAA;
+    /*background-color:##7FFFAA;*/
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+#wikipedia_response {
+    padding-right: 300px;
+    padding-left: 300px;
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+.section_title {
+    padding: 100px;
+    font-family: Helvetica;
+}
+
+.footage {
+    
+}

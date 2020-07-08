@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bandipedia</title>
+    <script src="JS_files/handlebars-v4.4.3.js"></script>
+    <script src="JS_files/jquery-3.4.1.min.js"></script>
+    <script src="JS_files/require.js"></script>
+        <script src="JS_files/search.js" type="text/javascript"></script>
+    <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="style/styles.css" />
+  </head>
+  <body style="background-color: #0E0E0E;">
+    <center>
+    <div class="container">
+        <h1 class="font" id="web_header">Bandipedia</h1>
+        <h4 class="font">The Free Band Wikipedia</h4>
+    <form id="search-form" onchange="search()">
+        <div class="input-container">
+                    <input type="text" id="query" placeholder="Type an Band Name">
+                    <label for="query">Type an Artist Name</label>
+                    <div class="bottom-line"></div>
+
+                </div>
+        <input type="submit" id="search-form" class="btn btn-primary" value="Search" />
+    </form>
+
+    <span id="wiki_headline" style="padding-top: 50px;"></span>
+    <div id="wikipedia_response" class="section_title">
+        <!-- <h2>Intro</h2> -->
+    </div>
+    <span id="youtube_headline"></span>
+    <div id = "youtube_response" class="section_title">
+        <!-- <h2>Youtube Videos</h2> -->
+    </div>
+    <div id="results">
+    </div>
+    
+</div>
+<script id="test" type="text/x-handlebars-template">
+    <h1 class="section_title">Albums on Spotify</h1>
+    {{#each albums.items}}
+    <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"></div>
+    {{/each}}
+</script>
+    <div class="footage">
+        <p style="font-size: 10px;">Designed & Implemented By: Issac Skorseth, Yahya Alhinai, Zichen Yang</p>
+        <p style="font-size: 10px;">API: Spotify, Youtube, Wikipedia</p>
+    </div>
+    
+</center>
+  </body>
+  <script type="text/javascript" src="JS_files/spotify.js"></script>
+</html>
+
